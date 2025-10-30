@@ -1,6 +1,6 @@
-# MinIO Design System
+# OpenStor Design System
 
-The MinIO Design System is a design specification for all UI elements used in MinIO products.
+The OpenStor Design System is a design specification for all UI elements used in OpenStor products.
 
 ## How to test
 
@@ -18,4 +18,4 @@ This process is required everytime a new component is created and ready to be di
 
 ## License
 
-MinIO Design System source is licensed under the GNU AGPLv3 license that can be found in the [LICENSE](https://github.com/minio/mds/blob/master/LICENSE) file.
+OpenStor Design System source is licensed under the GNU AGPLv3 license that can be found in the [LICENSE](https://github.com/openstor/mds/blob/main/LICENSE) file.
