@@ -15,7 +15,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import React, { FC, Fragment } from "react";
-import get from "lodash/get";
+import { get } from "lodash";
 import styled from "styled-components";
 import { ButtonProps, ConstructProps } from "./Button.types";
 import { breakPoints } from "../../global/utils";

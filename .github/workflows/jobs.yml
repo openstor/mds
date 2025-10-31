@@ -3,10 +3,10 @@ name: Workflow
 on:
   pull_request:
     branches:
-      - master
+      - main
   push:
     branches:
-      - master
+      - main
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref }}
@@ -21,13 +21,13 @@ jobs:
         os: [ubuntu-latest]
     steps:
       - name: Check out Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
 
       - name: Read .nvmrc
         id: node_version
         run: echo "$(cat .nvmrc)" && echo "NVMRC=$(cat .nvmrc)" >> $GITHUB_ENV
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v6
         with:
           node-version: ${{ env.NVMRC }}
 
